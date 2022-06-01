@@ -1,0 +1,25 @@
+.page_wrapper {
+    margin-top: 30px;
+    display: flex;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    margin-left: 10px;
+    margin-bottom: 30px;
+
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+.page_current {
+    border: 2px solid orange;
+    font-weight: bold;
+}

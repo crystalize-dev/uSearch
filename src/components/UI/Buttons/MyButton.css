@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+
+.myBtn {
+    padding: 10px;
+    width: 110px;
+
+    background: transparent;
+    border: 1px solid #7f5af0;
+    border-radius: 10px;
+
+    cursor: pointer;
+    color: #2cb67d;
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+
+    transition: 0.25s;
+}
+
+.myBtn:hover {
+    transform: scale(1.1);
+
+    background: #7f5af0;
+
+    color: black;
+    font-weight: bold;
+}
+
+.myBtn:disabled {
+    color: black;
+    transform: scale(1);
+    background: rgba(128, 128, 128, 0.29);
+    cursor: no-drop;
+}

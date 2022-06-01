@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+
+.my_select {
+    background-color: transparent;
+    width: 140px;
+    margin-left: 10px;
+    padding: 5px;
+    font-family: 'Comfortaa', cursive;
+    color: #2cb67d;
+    border-radius: 10px;
+    border: 1px solid #7f5af0;
+}
+
+.my_select:focus {
+    border-color: #7f5af0;
+    outline: none;
+}

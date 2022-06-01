@@ -1,0 +1,21 @@
+.error {
+    margin-top: 15px;
+    text-shadow: 2px 2px black;
+    color: red;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+}
+
+.form {
+    display: flex;
+    flex-flow: column;
+
+    width: 300px;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
