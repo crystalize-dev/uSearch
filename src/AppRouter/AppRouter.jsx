@@ -13,13 +13,6 @@ const AppRouter = () => {
                 : publicRoutes.map(route =>
                     <Route key={route.path} path={route.path} element={route.element}/>)
             }
-
-            <Route path="*" element={//<Posts/>
-                <main style={{padding: "1rem", color: 'red'}}>
-                    <h1>Ну и куда ты блять залез полупокер ебаный??!?!?!</h1>
-                </main>
-            }
-            />
         </Routes>
     );
 };

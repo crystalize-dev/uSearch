@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+@import url('http://fonts.cdnfonts.com/css/renogare-soft');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../img/background.png");
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+    color: #fffffe;
+    text-shadow: 3px 3px black;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 75vw;
+    border: 1px solid #7f5af0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+    background-color: #16161A;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0,0,2,1);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(127, 90, 240, 0.17);
+    border-radius: 20px;
+}

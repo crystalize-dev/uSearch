@@ -1,10 +1,10 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext} from 'react';
 import MyInput from "../components/UI/Inputs/MyInput";
-import MyButton from "../components/UI/Buttons/MyButton";
+import MyButton from "../components/UI/Buttons/Submit_login_btn/MyButton";
 import {AuthContext} from "../context";
-import "../styles/login_modal.css";
+import cl from "../page_styles/login.module.css";
 import {useInput} from "../hooks/useInput";
-import Error from "../components/Error";
+import Error from "../components/UI/Error";
 
 const Login = () => {
     const {isAuth, setIsAuth} = useContext(AuthContext)
@@ -17,30 +17,33 @@ const Login = () => {
     }
 
     return (
-        <div className="form">
-            <h1 className="center" style={{marginTop: 30}}>Login Page</h1>
-            <form className="form" onSubmit={auth}>
-                <MyInput onChange={e => email.onChange(e)}
-                         value={email.value}
-                         onBlur={e => email.onBlur(e)}
-                         name="email" type="text"
-                         placeholder="Enter email"
-                         autoComplete='off'
-                />
-                <Error name="email" item={email}/>
-                <MyInput onChange={e => password.onChange(e)}
-                         value={password.value}
-                         onBlur={e => password.onBlur(e)}
-                         name="password"
-                         type="password"
-                         placeholder="Enter Password"
-                         autoComplete='off'
-                />
-                <Error name="password" item={password}/>
-                <div className="center">
-                    <MyButton disabled={!email.inputValid || !password.inputValid} style={{marginTop: 20}}>Enter</MyButton>
-                </div>
-            </form>
+        <div className={cl.login__wrapper}>
+            <div className={cl.form}>
+                <h1 className={cl.center}>Login Page</h1>
+                <form className={cl.form} onSubmit={auth}>
+                    <MyInput onChange={e => email.onChange(e)}
+                             value={email.value}
+                             onBlur={e => email.onBlur(e)}
+                             name="email" type="text"
+                             placeholder="Enter email"
+                             autoComplete='off'
+                    />
+                    <Error name="email" item={email}/>
+                    <MyInput onChange={e => password.onChange(e)}
+                             value={password.value}
+                             onBlur={e => password.onBlur(e)}
+                             name="password"
+                             type="password"
+                             placeholder="Enter Password"
+                             autoComplete='off'
+                    />
+                    <Error name="password" item={password}/>
+                    <div className={cl.center}>
+                        <MyButton disabled={!email.inputValid || !password.inputValid}
+                                  className={cl.btn}>Enter</MyButton>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };

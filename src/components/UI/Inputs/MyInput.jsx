@@ -1,10 +1,10 @@
 import React from 'react';
-import './myInput.css'
+import cl from './myInput.module.css';
+import classes from "classnames";
 
 const MyInput = (props) => {
     return (
-        // eslint-disable-next-line no-useless-concat
-        <input {...props} className={props.className + " input"}/>
+        <input {...props} className={classes(props.className, cl.input)}/>
     );
 };
 

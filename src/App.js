@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import './styles/app.css'
+import './page_styles/app.css'
 import {BrowserRouter} from "react-router-dom";
-import Navbar from "./components/UI/Navbar/Navbar";
+import Navbar from "./components/UI/inline-elems/Navbar/Navbar";
 import AppRouter from "./AppRouter/AppRouter";
 import {AuthContext} from "./context";
 
