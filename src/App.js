@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import './page_styles/app.css'
+import './pages/app.css'
 import {BrowserRouter} from "react-router-dom";
-import Navbar from "./components/UI/inline-elems/Navbar/Navbar";
 import AppRouter from "./AppRouter/AppRouter";
 import {AuthContext} from "./context";
 
@@ -20,7 +19,6 @@ function App() {
             setIsAuth
         }}>
             <BrowserRouter>
-                <Navbar/>
                 <AppRouter/>
             </BrowserRouter>
         </AuthContext.Provider>

@@ -1,0 +1,95 @@
+.home {
+    display: flex;
+    justify-content: space-between;
+
+    height: 85vh;
+    width: 100%;
+}
+
+.imgArea {
+    width: 50%;
+
+    background: url("../../../img/utils/anti-mage.png") no-repeat center center;
+    background-size: contain;
+}
+
+.colored {
+    -webkit-text-stroke: 1px var(--white);
+    -webkit-text-fill-color: transparent;
+}
+
+.rectangle {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    height: 98vh;
+    width: 30%;
+
+    background: var(--violet);
+    z-index: -1;
+}
+
+.textArea {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 1%;
+
+    width: 55%;
+
+    color: var(--white);
+    line-height: 150px;
+}
+
+.textArea h1 {
+    width: 85%;
+
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 140px;
+}
+
+.textArea p {
+    font-size: 20px;
+}
+
+.statistic {
+    width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+.statistic div {
+    color: var(--gray);
+    font-size: 20px;
+}
+
+.statistic h2 {
+    color: var(--white);
+    font-size: 40px;
+}
+
+.statistic > * {
+    display: inline-flex;
+}
+
+.statisticItem {
+    flex-direction: column;
+    line-height: normal;
+}
+
+.homeBtns {
+    margin-top: 50px;
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.backgrounded {
+    background: var(--violet);
+    color: var(--white);
+}

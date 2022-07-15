@@ -1,0 +1,13 @@
+
+
+.roundBlur {
+    position: absolute;
+
+    border-radius: 50%;
+    box-shadow: 0 0 100px 100px var(--violet);
+
+    background: var(--violet);
+
+    filter: blur(200px);
+    z-index: -1;
+}

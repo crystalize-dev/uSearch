@@ -1,0 +1,19 @@
+.btn {
+    width: 150px;
+    height: 50px;
+
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: bold;
+
+    box-shadow: -3px 3px 5px black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.outlined {
+    color: var(--white);
+    background: transparent;
+    border: 2px solid var(--violet);
+}
