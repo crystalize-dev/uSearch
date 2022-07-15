@@ -7,8 +7,8 @@
 }
 
 :root {
+    /*fonts*/
     --main-font: 'Oswald', sans-serif;
-
 
     /*colors*/
     --violet: #7f5af0;
@@ -19,20 +19,14 @@
 
 html {
     scroll-behavior: smooth;
-}
 
-body {
     background: var(--dark);
 }
 
 
+/*scrollbar*/
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
