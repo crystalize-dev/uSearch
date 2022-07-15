@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
     margin: 0;
@@ -9,9 +10,12 @@
 :root {
     /*fonts*/
     --main-font: 'Oswald', sans-serif;
+    --second-font: 'Open Sans', sans-serif;
 
     /*colors*/
-    --violet: #7f5af0;
+    --violet: rgb(127, 90, 240);
+    --dark-violet: #3d1d9c;
+    --light-blue: #5984ef;
     --gray: #888888;
     --white: #f2f3f4;
     --dark: #16161A;
@@ -21,6 +25,9 @@ html {
     scroll-behavior: smooth;
 
     background: var(--dark);
+
+    height: 500vh;
+    overflow-x: hidden;
 }
 
 

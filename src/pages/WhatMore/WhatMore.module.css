@@ -1,0 +1,115 @@
+.whatMore {
+    margin-top: 10vh;
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.outlined {
+    -webkit-text-stroke: 1px var(--white);
+    -webkit-text-fill-color: transparent;
+}
+
+.splitText {
+    padding: 0 15%;
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.splitText > * {
+    display: inline-flex;
+
+    font-size: 80px;
+    color: var(--white);
+}
+
+.buttonsArea {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    width: 90%;
+    height: 60%;
+
+    color: var(--white);
+    font-family: var(--second-font);
+    font-weight: normal;
+}
+
+.func {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    margin-right: 20px;
+    padding: 40px 40px;
+
+    width: 25%;
+    height: 100%;
+
+    background: var(--violet);
+    transition: all 0.3s linear 0.01s;
+    box-shadow: 3px 3px 5px black;
+}
+
+.func:hover {
+    background: linear-gradient(to top left, var(--violet), var(--dark));
+}
+
+.func h1 {
+    font-size: 30px;
+}
+
+.func p {
+    margin-top: 20px;
+    height: 40%;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.joinNow {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+
+    width: 70%;
+    cursor: pointer;
+}
+
+.rightArrow {
+    width: 30px;
+    height: 30px;
+
+    background: url("../../img/arrows/right-with-thumb.png") no-repeat center center;
+    background: cover;
+}
+
+.icon {
+    width: 80px;
+    height: 25%;
+}
+
+.music {
+    background: url("../../img/icons/music-note.png") no-repeat center center;
+    background: cover;
+}
+.search {
+    background: url("../../img/icons/search.png") no-repeat center center;
+    background: cover;
+}
+.chat {
+    background: url("../../img/icons/chat.png") no-repeat center center;
+    background: cover;
+}
+.guild {
+    background: url("../../img/icons/guild.png") no-repeat center center;
+    background: cover;
+}
