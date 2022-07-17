@@ -23,8 +23,8 @@
     right: 0;
     top: 0;
 
-    height: 98vh;
-    width: 30%;
+    height: 99vh;
+    width: 25%;
 
     background: var(--violet);
     z-index: -1;
@@ -35,14 +35,14 @@
     flex-direction: column;
     padding: 30px 1%;
 
-    width: 55%;
+    width: 60%;
 
     color: var(--white);
     line-height: 150px;
 }
 
 .textArea h1 {
-    width: 85%;
+    width: 100%;
 
     font-weight: bold;
     font-variant: small-caps;

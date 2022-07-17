@@ -26,8 +26,7 @@ html {
 
     background: var(--dark);
 
-    height: 500vh;
-    overflow-x: hidden;
+    height: 500vw;
 }
 
 
@@ -37,5 +36,5 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--violet);
+    background-color: var(--gray);
 }

@@ -1,4 +1,5 @@
 .whatMore {
+    position: relative;
     margin-top: 10vh;
     width: 100%;
     height: 70vh;
@@ -7,6 +8,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.anchor {
+    position: absolute;
+    top: -10vw;
 }
 
 .outlined {
@@ -54,7 +60,7 @@
     height: 100%;
 
     background: var(--violet);
-    transition: all 0.3s linear 0.01s;
+    transition: all 0.3s linear 0.05s;
     box-shadow: 3px 3px 5px black;
 }
 
@@ -80,8 +86,13 @@
     position: absolute;
     bottom: 40px;
 
-    width: 70%;
+    width: 50%;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.joinNow:hover {
+    width: 60%;
 }
 
 .rightArrow {

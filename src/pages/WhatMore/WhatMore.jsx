@@ -2,13 +2,14 @@ import React from 'react';
 import cl from "./WhatMore.module.css";
 import classes from "classnames";
 
-const WhatMore = (id) => {
+const WhatMore = ({id}) => {
     return (
-         <div id={id} className={cl.whatMore}>
+         <div className={cl.whatMore}>
+             <div id={id} className={cl.anchor}/>
                 <div className={cl.splitText}>
-                    <h1 className={cl.outlined}>A lot</h1>
-                    <h1>Functionalities</h1>
-                    <h1 className={cl.outlined}>For you</h1>
+                    <h1 className={cl.outlined}>A LOT</h1>
+                    <h1>FUNCTIONALITIES</h1>
+                    <h1 className={cl.outlined}>FOR YOU</h1>
                 </div>
                 <div className={cl.buttonsArea}>
                     <div className={cl.func}>
@@ -32,7 +33,7 @@ const WhatMore = (id) => {
                     <div className={cl.func}>
                         <div className={classes(cl.icon, cl.chat)}/>
                         <h1>Chat</h1>
-                        <p>We also have messenger! You can write to your friends and find new ones</p>
+                        <p>We also have messenger! You can write to your friends and find new ones!</p>
                         <div className={cl.joinNow}>
                             <h1>Join Now</h1>
                             <div className={cl.rightArrow}/>
