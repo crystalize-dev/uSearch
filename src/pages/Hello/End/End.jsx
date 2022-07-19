@@ -1,10 +1,7 @@
 import React from 'react';
 import SquareButton from "../../../components/UI/Buttons/SquareButton";
-import github from "../../../img/icons/companies/github.png";
-import vk from "../../../img/icons/companies/vk.png";
-import steam from "../../../img/icons/companies/steamLogo.png";
-import logo from "../../../img/utils/logo.png";
 import cl from "./End.module.css";
+import {steam, logo, vk, git} from "../../../img/imgs";
 
 const End = () => {
     return (
@@ -24,10 +21,9 @@ const End = () => {
             </div>
             <div className={cl.credits}>
                 <div className={cl.upperImgs}>
-                    <a href="https://github.com/crystalize-dev"><img src={github} alt=""/></a>
-                    <a href="https://vk.com/zeneetsu" className={cl.vk}><img src={vk} alt=""/></a>
-                    <a href="https://steamcommunity.com/profiles/76561198129988011" className={cl.steam}><img
-                        src={steam} alt=""/></a>
+                    <a href="https://github.com/crystalize-dev"><img src={git} alt=""/></a>
+                    <a href="https://vk.com/zeneetsu"><img src={vk} alt=""/></a>
+                    <a href="https://steamcommunity.com/profiles/76561198129988011"><img src={steam} alt=""/></a>
                 </div>
                 <a href={"#home"}><img src={logo} alt=""/></a>
             </div>

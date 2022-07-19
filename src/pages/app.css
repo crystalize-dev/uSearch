@@ -28,11 +28,6 @@ html {
     background: var(--dark);
 }
 
-img {
-    background-repeat: no-repeat;
-}
-
-
 /*scrollbar*/
 ::-webkit-scrollbar {
     width: 8px;

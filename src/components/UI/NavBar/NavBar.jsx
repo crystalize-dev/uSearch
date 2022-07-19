@@ -9,19 +9,19 @@ const NavBar = () => {
             <img src={logo} id={"home"} alt="" className={cl.logo}/>
             <div className={cl.linkArea}>
                 <div>
-                    <a href={"#whatMore"} className={cl.link}>What more</a>
+                    <a href={"#whatMore"}>What more</a>
                     <hr className={cl.line}/>
                 </div>
                 <div>
-                    <a href={"#whyUs"} className={cl.link}>Why us</a>
+                    <a href={"#whyUs"}>Why us</a>
                     <hr className={cl.line}/>
                 </div>
                 <div>
-                    <a href={"#plans"} className={cl.link}>Plans</a>
+                    <a href={"#plans"}>Plans</a>
                     <hr className={cl.line}/>
                 </div>
                 <div>
-                    <a href={"#games"} className={cl.link}>Games</a>
+                    <a href={"#games"}>Games</a>
                     <hr className={cl.line}/>
                 </div>
             </div>

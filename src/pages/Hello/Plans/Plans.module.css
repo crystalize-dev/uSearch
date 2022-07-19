@@ -31,11 +31,13 @@
 
     background: var(--gray);
     color: var(--white);
-    transition: all 0.2s linear 0s;
+    transition: all 0.5s linear 0s;
 }
 
 .plan:hover {
     transform: scale(1.1);
+
+    background: var(--violet);
 }
 
 .center {
@@ -46,6 +48,8 @@
 
 .center:hover {
     transform: scale(1.3);
+
+    background: linear-gradient(to bottom, var(--violet), var(--dark-violet));
 }
 
 .plan h1 {
@@ -83,17 +87,4 @@
 .checked {
     width: 25px;
     height: 25px;
-}
-
-.oneStar {
-    background: url("../../../img/icons/star1.png") no-repeat center center;
-    background-size: cover;
-}
-.twoStars {
-    background: url("../../../img/icons/star2.png") no-repeat center center;
-    background-size: cover;
-}
-.threeStars {
-    background: url("../../../img/icons/star3.png") no-repeat center center;
-    background-size: cover;
 }
