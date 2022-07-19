@@ -1,29 +1,25 @@
 import React from 'react';
 import cl from "./hello.module.css";
-import SquareButton from "../../components/UI/Buttons/SquareButton";
 import NavBar from "../../components/UI/NavBar/NavBar";
 import Home from "./Home/Home";
-import WhatMore from "../WhatMore/WhatMore";
-import Background from "../BackGround/Background";
-import WhyUs from "../whyUs/whyUs";
+import WhatMore from "./WhatMore/WhatMore";
+import Background from "./BackGround/Background";
+import WhyUs from "./whyUs/whyUs";
+import Plans from "./Plans/Plans";
+import Games from "./Games/Games";
+import End from "./End/End";
 
 const Hello = () => {
     return (
         <div className={cl.body}>
-            <NavBar>
-                <div className={cl.logo}/>
-                <div>
-                    <a href={"#whatMore"} className={cl.link}>What more</a>
-                    <a href={"#whyUs"} className={cl.link}>Why us</a>
-                    <a href={"#"} className={cl.link}>Plans</a>
-                    <a href={"#"} className={cl.link}>Testimonials</a>
-                </div>
-                <SquareButton outlined={false}>Join Now</SquareButton>
-            </NavBar>
+            <NavBar id="home"/>
             <Background/>
-            <Home id="home"/>
+            <Home/>
             <WhatMore id="whatMore"/>
             <WhyUs id="whyUs"/>
+            <Plans id="plans"/>
+            <Games id="games"/>
+            <End/>
         </div>
     );
 };

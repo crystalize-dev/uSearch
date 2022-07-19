@@ -1,16 +1,13 @@
 import React from 'react';
 import cl from "./WhatMore.module.css";
 import classes from "classnames";
+import SplitText from "../util/splitText/splitText";
 
 const WhatMore = ({id}) => {
     return (
          <div className={cl.whatMore}>
              <div id={id} className={cl.anchor}/>
-                <div className={cl.splitText}>
-                    <h1 className={cl.outlined}>A LOT</h1>
-                    <h1>FUNCTIONALITIES</h1>
-                    <h1 className={cl.outlined}>FOR YOU</h1>
-                </div>
+             <SplitText outlined1={"A LOT OF"} outlined2={"FOR YOU"}>FUNCTIONALITIES</SplitText>
                 <div className={cl.buttonsArea}>
                     <div className={cl.func}>
                         <div className={classes(cl.icon, cl.music)}/>

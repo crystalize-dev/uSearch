@@ -15,26 +15,6 @@
     top: -10vw;
 }
 
-.outlined {
-    -webkit-text-stroke: 1px var(--white);
-    -webkit-text-fill-color: transparent;
-}
-
-.splitText {
-    padding: 0 15%;
-    width: 90%;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.splitText > * {
-    display: inline-flex;
-
-    font-size: 80px;
-    color: var(--white);
-}
-
 .buttonsArea {
     display: flex;
     justify-content: center;
@@ -59,13 +39,13 @@
     width: 25%;
     height: 100%;
 
-    background: var(--violet);
+    background: var(--gray);
     transition: all 0.3s linear 0.05s;
     box-shadow: 3px 3px 5px black;
 }
 
 .func:hover {
-    background: linear-gradient(to top left, var(--violet), var(--dark));
+    background: var(--violet);
 }
 
 .func h1 {
@@ -99,7 +79,7 @@
     width: 30px;
     height: 30px;
 
-    background: url("../../img/arrows/right-with-thumb.png") no-repeat center center;
+    background: url("../../../img/arrows/right-with-thumb.png") no-repeat center center;
     background: cover;
 }
 
@@ -109,18 +89,18 @@
 }
 
 .music {
-    background: url("../../img/icons/music-note.png") no-repeat center center;
+    background: url("../../../img/icons/music-note.png") no-repeat center center;
     background: cover;
 }
 .search {
-    background: url("../../img/icons/search.png") no-repeat center center;
+    background: url("../../../img/icons/search.png") no-repeat center center;
     background: cover;
 }
 .chat {
-    background: url("../../img/icons/chat.png") no-repeat center center;
+    background: url("../../../img/icons/chat.png") no-repeat center center;
     background: cover;
 }
 .guild {
-    background: url("../../img/icons/guild.png") no-repeat center center;
+    background: url("../../../img/icons/guild.png") no-repeat center center;
     background: cover;
 }

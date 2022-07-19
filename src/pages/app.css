@@ -13,10 +13,11 @@
     --second-font: 'Open Sans', sans-serif;
 
     /*colors*/
-    --violet: rgb(127, 90, 240);
+    --violet: #7f5af0;
     --dark-violet: #3d1d9c;
     --light-blue: #5984ef;
-    --gray: #888888;
+    --light-gray: #949494;
+    --gray: #383842;
     --white: #f2f3f4;
     --dark: #16161A;
 }
@@ -25,8 +26,6 @@ html {
     scroll-behavior: smooth;
 
     background: var(--dark);
-
-    height: 500vw;
 }
 
 
@@ -36,5 +35,5 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--gray);
+    background-color: var(--white);
 }

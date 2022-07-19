@@ -7,3 +7,22 @@
 
     padding: 20px 0;
 }
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 70px;
+
+    background: url("../../../img/logo.png") no-repeat center center;
+    background-size: cover;
+}
+
+.link {
+    margin-left: 30px;
+}

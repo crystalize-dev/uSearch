@@ -1,0 +1,120 @@
+.anchor {
+    position: absolute;
+    top: -5vw;
+}
+
+.games {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vw;
+
+    width: 100%;
+    height: 80vh;
+}
+
+.games > * {
+    display: inline-flex;
+}
+
+.textBlock {
+    padding: 40px 40px;
+    flex-direction: column;
+
+    width: 45%;
+    height: 100%;
+
+    color: var(--white);
+}
+
+.textBlock > h1 {
+    color: var(--violet);
+}
+
+.textBlock > h2 {
+    font-size: 100px;
+}
+
+.textBlock > p {
+    margin-top: 40px;
+
+    font-size: 30px;
+    line-height: 60px;
+    font-family: var(--second-font);
+}
+
+.outlined {
+    -webkit-text-stroke: 1px var(--white);
+    -webkit-text-fill-color: transparent;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+
+    width: 45%;
+    height: 100%;
+
+    border: 1px solid var(--violet);
+    z-index: -100;
+}
+
+.slider {
+    border: 5px solid var(--dark);
+    margin-right: 5%;
+
+    width: 45%;
+    height: 100%;
+    box-shadow: inset 0 0 50px 10px black,
+                    40px 40px var(--violet);
+}
+
+.window {
+    display: inline-flex;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+    overflow: hidden;
+}
+
+.img {
+    display: inline-flex;
+
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+
+    animation: 30s linear 0s infinite alternate slide;
+}
+
+.img1 {
+    background: url("../../../img/utils/dota.jpg") no-repeat center center;
+    background-size: cover;
+}
+.img2 {
+    background: url("../../../img/utils/apex.jpg") no-repeat center center;
+    background-size: cover;
+}
+.img3 {
+    background: url("../../../img/utils/cs go.jpg") no-repeat center center;
+    background-size: cover;
+}
+.img4 {
+    background: url("../../../img/utils/pubg1.png") no-repeat center center;
+    background-size: cover;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-300%);
+    }
+}

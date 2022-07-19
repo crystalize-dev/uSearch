@@ -1,0 +1,100 @@
+.end {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10vw;
+
+    height: 15vw;
+}
+
+.line {
+    width: 30%;
+    border: 2px solid var(--violet);
+    border-radius: 20px;
+}
+
+.textBlock {
+    width: 50%;
+    height: 100%;
+}
+
+.outline {
+    -webkit-text-stroke: 1px var(--white);
+    -webkit-text-fill-color: transparent;
+}
+
+.textBlock > h1 {
+    margin-top: 40px;
+    color: var(--white);
+    font-size: 80px;
+}
+
+.rectangleArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 5%;
+
+    width: 70%;
+    height: 100px;
+
+    background: var(--gray);
+    color: var(--white);
+    font-family: var(--second-font);
+    font-size: 20px;
+}
+
+.buttonArea {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    width: 30%;
+    height: 100%;
+}
+
+.btnJoin {
+    background: var(--violet);
+    color: var(--white);
+}
+
+.credits {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 5vw;
+
+    width: 100%;
+    height: 300px;
+
+    border-top: 1px solid white;
+}
+
+.credits > a > img {
+    width: 250px;
+    height: 100px;
+}
+
+.upperImgs > a > * {
+    width: 50px;
+    height: 50px;
+}
+
+.credits img {
+    transition: all 0.3s ease 0s;
+}
+
+.credits img:hover {
+    transform: scale(1.2);
+}
+
+.upperImgs {
+    width: 25%;
+    height: 60%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

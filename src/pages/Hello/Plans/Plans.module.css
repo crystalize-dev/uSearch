@@ -1,0 +1,93 @@
+.plans {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-top: 7vw;
+}
+
+.plansArea {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 2vw;
+
+    width: 80%;
+    height: 80vh;
+}
+
+.plan {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 40px 40px;
+
+    width: 20vw;
+    height: 80%;
+
+    background: var(--gray);
+    color: var(--white);
+    transition: all 0.3s linear 0.05s;
+}
+
+.center {
+    background: linear-gradient(to bottom, var(--violet), var(--dark-violet));
+
+    transform: scale(1.2);
+}
+
+.plan h1 {
+    font-variant: small-caps;
+    font-size: 30px;
+}
+
+.plan h2 {
+    font-size: 60px;
+}
+
+.checkBox {
+    font-family: var(--second-font);
+    display: inline-flex;
+}
+
+.checkBox > p {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.btnJoin {
+    width: 100%;
+}
+
+.center > .btnJoin {
+    color: var(--dark-violet);
+}
+
+.topImg {
+    width: 50px;
+    height: 50px;
+}
+.checked {
+    width: 25px;
+    height: 25px;
+
+    background: url("../../../img/icons/checkWhite.png") no-repeat center center;
+    background-size: cover;
+}
+
+.oneStar {
+    background: url("../../../img/icons/star1.png") no-repeat center center;
+    background-size: cover;
+}
+.twoStars {
+    background: url("../../../img/icons/star2.png") no-repeat center center;
+    background-size: cover;
+}
+.threeStars {
+    background: url("../../../img/icons/star3.png") no-repeat center center;
+    background-size: cover;
+}

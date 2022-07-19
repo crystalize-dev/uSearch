@@ -1,0 +1,19 @@
+.outlined {
+    -webkit-text-stroke: 1px var(--white);
+    -webkit-text-fill-color: transparent;
+}
+
+.splitText {
+    padding: 0 15%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.splitText > * {
+    display: inline-flex;
+
+    font-size: 70px;
+    color: var(--white);
+}
