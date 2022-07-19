@@ -3,6 +3,7 @@ import SplitText from "../util/splitText/splitText";
 import classes from "classnames";
 import SquareButton from "../../../components/UI/Buttons/SquareButton";
 import cl from "./Plans.module.css";
+import {checkWhite} from "../../../img/imgs";
 
 const Plans = ({id}) => {
     return (
@@ -14,15 +15,15 @@ const Plans = ({id}) => {
                     <h1>FREE PLAN</h1>
                     <h2> $ 0 </h2>
                     <div className={cl.checkBox}>
-                        <div className={cl.checked}/>
+                        <img src={checkWhite} alt="" className={cl.checked}/>
                         <p>Basic filters</p>
                     </div>
                     <div className={cl.checkBox}>
-                        <div className={cl.checked}/>
+                        <img src={checkWhite} alt="" className={cl.checked}/>
                         <p>Fast search</p>
                     </div>
                     <div className={cl.checkBox}>
-                        <div className={cl.checked}/>
+                        <img src={checkWhite} alt="" className={cl.checked}/>
                         <p>Ability to join guilds</p>
                     </div>
                     <SquareButton className={cl.btnJoin}>Join now</SquareButton>
@@ -32,15 +33,15 @@ const Plans = ({id}) => {
                     <h1>PREMIUM PLAN</h1>
                     <h2> $ 5 </h2>
                     <div className={cl.checkBox}>
-                        <div className={cl.checked}/>
+                        <img src={checkWhite} alt="" className={cl.checked}/>
                         <p>All filters</p>
                     </div>
                     <div className={cl.checkBox}>
-                        <div className={cl.checked}/>
+                        <img src={checkWhite} alt="" className={cl.checked}/>
                         <p>Unlocks music</p>
                     </div>
                     <div className={cl.checkBox}>
-                        <div className={cl.checked}/>
+                        <img src={checkWhite} alt="" className={cl.checked}/>
                         <p>Priority search</p>
                     </div>
                     <SquareButton className={cl.btnJoin}>Join now</SquareButton>
@@ -50,15 +51,15 @@ const Plans = ({id}) => {
                     <h1>basic plan</h1>
                     <h2> $ 2 </h2>
                     <div className={cl.checkBox}>
-                        <div className={cl.checked}/>
+                        <img src={checkWhite} alt="" className={cl.checked}/>
                         <p>More filters</p>
                     </div>
                     <div className={cl.checkBox}>
-                        <div className={cl.checked}/>
+                        <img src={checkWhite} alt="" className={cl.checked}/>
                         <p>Ability to create guilds</p>
                     </div>
                     <div className={cl.checkBox}>
-                        <div className={cl.checked}/>
+                        <img src={checkWhite} alt="" className={cl.checked}/>
                         <p>Unlocks messenger</p>
                     </div>
                     <SquareButton className={cl.btnJoin}>Join now</SquareButton>

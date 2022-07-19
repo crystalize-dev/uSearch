@@ -72,14 +72,33 @@
                     40px 40px var(--violet);
 }
 
-.window {
-    display: inline-flex;
+.windowWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
 
     width: 100%;
     height: 100%;
+}
+
+.window {
+    display: inline-flex;
+
+    width: inherit;
+    height: inherit;
 
     z-index: -1;
+
     overflow: hidden;
+}
+
+.window > div {
+    display: inline-flex;
+
+    width: inherit;
+    height: inherit;
+
+    transition: all 0.3s ease 0s;
 }
 
 .img {
@@ -88,33 +107,26 @@
     max-width: 100%;
     min-width: 100%;
     height: 100%;
-
-    animation: 30s linear 0s infinite alternate slide;
 }
 
-.img1 {
-    background: url("../../../img/utils/dota.jpg") no-repeat center center;
-    background-size: cover;
-}
-.img2 {
-    background: url("../../../img/utils/apex.jpg") no-repeat center center;
-    background-size: cover;
-}
-.img3 {
-    background: url("../../../img/utils/cs go.jpg") no-repeat center center;
-    background-size: cover;
-}
-.img4 {
-    background: url("../../../img/utils/pubg1.png") no-repeat center center;
-    background-size: cover;
+.leftArrow, .rightArrow {
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
 }
 
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
+.leftArrow {
+    left: -40px;
+}
 
-    to {
-        transform: translateX(-300%);
-    }
+.rightArrow {
+    right: -50px;
+}
+
+.disabled {
+    transform: scale(0);
+    pointer-events: none;
 }

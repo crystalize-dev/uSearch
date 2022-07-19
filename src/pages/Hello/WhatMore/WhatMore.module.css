@@ -76,31 +76,11 @@
 }
 
 .rightArrow {
-    width: 30px;
-    height: 30px;
-
-    background: url("../../../img/arrows/right-with-thumb.png") no-repeat center center;
-    background: cover;
+    width: 40px;
+    height: 40px;
 }
 
 .icon {
-    width: 80px;
-    height: 25%;
-}
-
-.music {
-    background: url("../../../img/icons/music-note.png") no-repeat center center;
-    background: cover;
-}
-.search {
-    background: url("../../../img/icons/search.png") no-repeat center center;
-    background: cover;
-}
-.chat {
-    background: url("../../../img/icons/chat.png") no-repeat center center;
-    background: cover;
-}
-.guild {
-    background: url("../../../img/icons/guild.png") no-repeat center center;
-    background: cover;
+    width: 50px;
+    height: 15%;
 }

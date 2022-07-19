@@ -6,5 +6,5 @@
 
     font-family: var(--main-font);
 
-    overflow: hidden;
+    overflow: clip;
 }

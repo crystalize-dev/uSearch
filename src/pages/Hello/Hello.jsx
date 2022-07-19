@@ -12,7 +12,7 @@ import End from "./End/End";
 const Hello = () => {
     return (
         <div className={cl.body}>
-            <NavBar id="home"/>
+            <NavBar/>
             <Background/>
             <Home/>
             <WhatMore id="whatMore"/>

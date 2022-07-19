@@ -1,9 +1,9 @@
 import React from 'react';
 import SquareButton from "../../../components/UI/Buttons/SquareButton";
-import github from "../../../img/icons/github.png";
-import vk from "../../../img/icons/vk.png";
-import steam from "../../../img/icons/steam.png";
-import logo from "../../../img/logo.png";
+import github from "../../../img/icons/companies/github.png";
+import vk from "../../../img/icons/companies/vk.png";
+import steam from "../../../img/icons/companies/steamLogo.png";
+import logo from "../../../img/utils/logo.png";
 import cl from "./End.module.css";
 
 const End = () => {

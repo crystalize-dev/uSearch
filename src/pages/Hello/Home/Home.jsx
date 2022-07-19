@@ -1,12 +1,14 @@
 import React from 'react';
 import SquareButton from "../../../components/UI/Buttons/SquareButton";
 import cl from "./Home.module.css";
+import OutLined from "../../../components/UI/OutLinedText/OutLined";
+import {antiMage} from "../../../img/imgs";
 
 const Home = ({id}) => {
     return (
         <div id={id} className={cl.home}>
             <div className={cl.textArea}>
-                <h1><span className={cl.colored}>SEARCH</span> YOUR IDEAL TEAMMATE</h1>
+                <h1><OutLined>SEARCH</OutLined> YOUR IDEAL TEAMMATE</h1>
                 <p>We will help you find the perfect match for you. Just click a couple of buttons and go!</p>
                 <div className={cl.statistic}>
                     <div className={cl.statisticItem}>
@@ -27,7 +29,9 @@ const Home = ({id}) => {
                     <SquareButton outlined={true}>Learn More</SquareButton>
                 </div>
             </div>
-            <div className={cl.imgArea}/>
+            <div className={cl.imgArea}>
+                <img src={antiMage} alt=""/>
+            </div>
             <div className={cl.rectangle}/>
         </div>
     );

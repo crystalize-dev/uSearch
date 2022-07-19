@@ -7,15 +7,15 @@
 }
 
 .imgArea {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    background: url("../../../img/utils/anti-mage.png") no-repeat center center;
-    background-size: contain;
+    width: 50%;
 }
 
-.colored {
-    -webkit-text-stroke: 1px var(--white);
-    -webkit-text-fill-color: transparent;
+.imgArea > img {
+    width: 90%;
 }
 
 .rectangle {

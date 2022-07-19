@@ -15,14 +15,28 @@ a {
     font-size: 20px;
 }
 
+.linkArea {
+    display: inline-flex;
+}
+
+.linkArea > * {
+    margin-left: 50px;
+}
+
+.linkArea > * > hr {
+    transition: all 0.3s ease 0s;
+}
+
+.linkArea > *:hover hr {
+    transform: scale(1);
+}
+
 .logo {
     width: 200px;
     height: 70px;
-
-    background: url("../../../img/logo.png") no-repeat center center;
-    background-size: cover;
 }
 
-.link {
-    margin-left: 30px;
+.line {
+    width: 100%;
+    transform: scale(0);
 }

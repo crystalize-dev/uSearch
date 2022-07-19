@@ -1,0 +1,4 @@
+.outLined {
+    -webkit-text-stroke: 1px var(--white);
+    -webkit-text-fill-color: transparent;
+}

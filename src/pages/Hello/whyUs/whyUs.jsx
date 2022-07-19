@@ -1,17 +1,18 @@
 import React from 'react';
 import cl from "./whyUs.module.css";
+import {steamFull, hyperX, cola, check, dota, pubg, apex, overWatch} from "../../../img/imgs";
 
 const WhyUs = ({id}) => {
     return (
             <div className={cl.whyUs}>
                 <div id={id} className={cl.anchor}/>
                 <div className={cl.imgBlock}>
-                    <div className={cl.leftImgBlock}/>
+                    <img src={pubg} alt="" className={cl.leftImgBlock}/>
                     <div className={cl.rightImgBlock}>
-                        <div className={cl.upperImgBlock}/>
+                        <img src={dota} alt="" className={cl.upperImgBlock}/>
                         <div className={cl.bottomImgBlock}>
-                            <div className={cl.bottomLeftImgBlock}/>
-                            <div className={cl.bottomRightImgBlock}/>
+                            <img src={apex} alt="" className={cl.bottomLeftImgBlock}/>
+                            <img src={overWatch} alt="" className={cl.bottomRightImgBlock}/>
                         </div>
                     </div>
                 </div>
@@ -20,25 +21,28 @@ const WhyUs = ({id}) => {
                     <h2><span className={cl.outlined}>WHY</span> CHOOSE US?</h2>
                     <div className={cl.itemsBlock}>
                         <div>
-                            <div className={cl.checkedImg}/>
+                            <img src={check} alt="" className={cl.checkedImg}/>
                             <p>Huge selection of filters and search criteria</p>
                         </div>
                         <div>
-                            <div className={cl.checkedImg}/>
+                            <img src={check} alt="" className={cl.checkedImg}/>
                             <p>Extensive functionality</p>
                         </div>
                         <div>
-                            <div className={cl.checkedImg}/>
+                            <img src={check} alt="" className={cl.checkedImg}/>
                             <p>The most convenient interface and management</p>
                         </div>
                         <div>
-                            <div className={cl.checkedImg}/>
+                            <img src={check} alt="" className={cl.checkedImg}/>
                             <p>The ability to find a teammate in almost any game</p>
                         </div>
+                        <div>
+                            <h1>Already chosen:</h1>
+                        </div>
                         <div className={cl.sponsors}>
-                            <div className={cl.hyperX}/>
-                            <div className={cl.steam}/>
-                            <div className={cl.cola}/>
+                            <img src={hyperX} alt=""/>
+                            <img src={steamFull} alt=""/>
+                            <img src={cola} alt=""/>
                         </div>
                     </div>
                 </div>

@@ -31,13 +31,21 @@
 
     background: var(--gray);
     color: var(--white);
-    transition: all 0.3s linear 0.05s;
+    transition: all 0.2s linear 0s;
+}
+
+.plan:hover {
+    transform: scale(1.1);
 }
 
 .center {
     background: linear-gradient(to bottom, var(--violet), var(--dark-violet));
 
     transform: scale(1.2);
+}
+
+.center:hover {
+    transform: scale(1.3);
 }
 
 .plan h1 {
@@ -71,12 +79,10 @@
     width: 50px;
     height: 50px;
 }
+
 .checked {
     width: 25px;
     height: 25px;
-
-    background: url("../../../img/icons/checkWhite.png") no-repeat center center;
-    background-size: cover;
 }
 
 .oneStar {
