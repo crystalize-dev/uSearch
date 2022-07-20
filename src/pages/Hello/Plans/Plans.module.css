@@ -1,11 +1,12 @@
 .plans {
     display: flex;
     align-items: center;
+
     flex-direction: column;
 
     width: 100%;
 
-    margin-top: 7vw;
+    margin-top: 20vh;
 }
 
 .plansArea {
@@ -24,14 +25,16 @@
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 40px 40px;
+    padding: 2% 2%;
 
-    width: 20vw;
+    width: 27%;
     height: 80%;
 
     background: var(--gray);
     color: var(--white);
-    transition: all 0.5s linear 0s;
+    transition: var(--smooth);
+
+    overflow: hidden;
 }
 
 .plan:hover {
@@ -54,7 +57,7 @@
 
 .plan h1 {
     font-variant: small-caps;
-    font-size: 30px;
+    font-size: calc(15px + 1vw);
 }
 
 .plan h2 {
@@ -87,4 +90,33 @@
 .checked {
     width: 25px;
     height: 25px;
+}
+
+@media (max-width: 1000px) {
+    .plans {
+        margin-top: 100px;
+
+        height: 60vh;
+    }
+
+    .checkBox {
+        display: none;
+    }
+
+    .topImg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .plan h2 {
+        font-size: 20px;
+    }
+
+    .plansArea {
+        height: 40%;
+    }
+
+    .btnJoin {
+        display: none;
+    }
 }

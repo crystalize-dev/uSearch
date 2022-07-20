@@ -15,11 +15,18 @@
     /*colors*/
     --violet: #7f5af0;
     --dark-violet: #3d1d9c;
+
     --light-blue: #5984ef;
     --light-gray: #949494;
+
     --gray: #383842;
     --white: #f2f3f4;
     --dark: #16161A;
+
+    /*transition*/
+    --smooth: all 0.3s ease 0s;
+
+    --test: 1px solid red;
 }
 
 html {

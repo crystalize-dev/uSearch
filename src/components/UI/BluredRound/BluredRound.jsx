@@ -5,10 +5,10 @@ const BluredRound = ({top, left, size}) => {
     return (
             <div className={cl.roundBlur} style={
                 {
-                    top: top,
-                    left: left,
-                    width: size,
-                    height: size
+                    top: `${top}%`,
+                    left: `${left}%`,
+                    width: `${size}px`,
+                    height: `${size}px`
                 }
             }/>
     );

@@ -1,9 +1,9 @@
 .btn {
-    width: 150px;
-    height: 50px;
+    width: calc(50px + 7vw);
+    height: calc(50px + 0.5vh);
 
     font-family: var(--main-font);
-    font-size: 20px;
+    font-size: calc(13px + 0.6vw);
     font-weight: bold;
 
     border: none;

@@ -4,7 +4,7 @@
 }
 
 .splitText {
-    padding: 0 15%;
+    padding: 0 10%;
     width: 100%;
 
     display: flex;
@@ -14,6 +14,6 @@
 .splitText > * {
     display: inline-flex;
 
-    font-size: 70px;
+    font-size: 4vw;
     color: var(--white);
 }

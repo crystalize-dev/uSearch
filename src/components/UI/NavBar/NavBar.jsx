@@ -25,7 +25,7 @@ const NavBar = () => {
                     <hr className={cl.line}/>
                 </div>
             </div>
-            <SquareButton outlined={false}>Join Now</SquareButton>
+            <SquareButton className={cl.btnArea} outlined={false}>Join Now</SquareButton>
         </div>
     );
 };

@@ -1,28 +1,31 @@
 .whatMore {
     position: relative;
-    margin-top: 10vh;
+
+    margin-top: 15vh;
     width: 100%;
-    height: 70vh;
+
+    height: 80vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
     flex-direction: column;
 }
 
 .anchor {
     position: absolute;
-    top: -10vw;
+    top: -10vh;
 }
 
-.buttonsArea {
+.funcsArea {
     display: flex;
     justify-content: center;
 
     margin-top: 20px;
 
-    width: 90%;
-    height: 60%;
+    width: 100%;
+    height: 45vh;
 
     color: var(--white);
     font-family: var(--second-font);
@@ -31,56 +34,100 @@
 
 .func {
     display: inline-flex;
-    position: relative;
     flex-direction: column;
-    margin-right: 20px;
-    padding: 40px 40px;
+    justify-content: space-between;
+
+    padding: 2% 2%;
 
     width: 25%;
     height: 100%;
 
     background: var(--gray);
-    transition: all 0.3s linear 0.05s;
-    box-shadow: 3px 3px 5px black;
+
+    transition: var(--smooth);
+}
+
+.func:not(:first-child) {
+    margin-left: 30px;
 }
 
 .func:hover {
     background: var(--violet);
+
+    transform: scale(1.1);
 }
 
 .func h1 {
-    font-size: 30px;
+    font-size: calc(20px + 1vw);
 }
 
 .func p {
-    margin-top: 20px;
-    height: 40%;
-    font-size: 20px;
+    font-size: calc(10px + 0.5vw);
+
     font-weight: normal;
 }
 
 .joinNow {
     display: inline-flex;
-    justify-content: space-between;
     align-items: center;
-    position: absolute;
-    bottom: 40px;
 
-    width: 50%;
+    width: 40%;
+
     cursor: pointer;
-    transition: all 0.3s ease 0s;
 }
 
-.joinNow:hover {
-    width: 60%;
+.joinNow > h1 {
+    font-size: calc(10px + 0.5vw);
+}
+
+.joinNow:hover .rightArrow{
+    transform: translateX(100%);
 }
 
 .rightArrow {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+
+    margin-left: 20px;
+
+    transition: var(--smooth);
 }
 
 .icon {
-    width: 50px;
-    height: 15%;
+    width: 10%;
+    min-width: 50px;
+}
+
+
+@media (max-width: 900px) {
+    .whatMore {
+        margin-top: 100px;
+        height: 50vh;
+    }
+
+    .func > *:not(:first-child) {
+        display: none;
+    }
+
+    .func:hover {
+        background: var(--gray);
+    }
+
+    .func {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 100px;
+        min-width: 100px;
+    }
+
+    .icon {
+        width: 50%;
+        height: 50%;
+    }
+
+    .func {
+        height: 40%;
+    }
 }

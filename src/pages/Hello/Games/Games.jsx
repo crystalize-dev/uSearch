@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import cl from "./Games.module.css";
 import {apex, pubgFull, csgoFull, leftArrow, rightArrow, dotaFHD} from "../../../img/imgs";
 import classes from "classnames";
+import OutLined from "../../../components/UI/OutLinedText/OutLined";
 
 const Games = ({id}) => {
 
@@ -33,8 +34,7 @@ const Games = ({id}) => {
             <div id={id} className={cl.anchor}/>
             <div className={cl.textBlock}>
                 <h1>GAMES</h1>
-                <h2>THAT WE CAN <span className={cl.outlined}> OFFER TO YOU</span>
-                </h2>
+                <h2><OutLined>THAT WE CAN </OutLined> OFFER TO YOU </h2>
                 <p>
                     A large selection of games, as well as the opportunity to offer us your own variations that you
                     did not find with us!

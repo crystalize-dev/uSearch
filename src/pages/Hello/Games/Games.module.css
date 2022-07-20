@@ -19,7 +19,7 @@
 }
 
 .textBlock {
-    padding: 40px 40px;
+    padding: 2% 2%;
     flex-direction: column;
 
     width: 45%;
@@ -33,7 +33,7 @@
 }
 
 .textBlock > h2 {
-    font-size: 100px;
+    font-size: calc(60px + 3vw);
 }
 
 .textBlock > p {
@@ -44,10 +44,7 @@
     font-family: var(--second-font);
 }
 
-.outlined {
-    -webkit-text-stroke: 1px var(--white);
-    -webkit-text-fill-color: transparent;
-}
+
 
 .slider:before {
     content: "";
@@ -129,4 +126,19 @@
 .disabled {
     transform: scale(0);
     pointer-events: none;
+}
+
+
+@media (max-width: 1070px) {
+    .games {
+        margin-top: 0;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .textBlock {
+        width: 100%;
+    }
 }

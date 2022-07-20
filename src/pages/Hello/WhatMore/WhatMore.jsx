@@ -9,7 +9,7 @@ const WhatMore = ({id}) => {
          <div className={cl.whatMore}>
              <div id={id} className={cl.anchor}/>
              <SplitText outlined1={"A LOT OF"} outlined2={"FOR YOU"}>FUNCTIONALITIES</SplitText>
-                <div className={cl.buttonsArea}>
+             <div className={cl.funcsArea}>
                     <div className={cl.func}>
                         <img src={music} alt="" className={cl.icon}/>
                         <h1>Music</h1>

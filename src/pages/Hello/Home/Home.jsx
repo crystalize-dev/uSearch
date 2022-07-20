@@ -24,14 +24,12 @@ const Home = ({id}) => {
                         to find teammate
                     </div>
                 </div>
-                <div className={cl.homeBtns}>
+                <div className={cl.btns}>
                     <SquareButton outlined={false} className={cl.backgrounded}>Get started</SquareButton>
-                    <SquareButton outlined={true}>Learn More</SquareButton>
+                    <SquareButton outlined={true} className={cl.outlined}><a href="#whatMore">Learn More</a></SquareButton>
                 </div>
             </div>
-            <div className={cl.imgArea}>
-                <img src={antiMage} alt=""/>
-            </div>
+            <img className={cl.imgArea} src={antiMage} alt=""/>
             <div className={cl.rectangle}/>
         </div>
     );
