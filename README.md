@@ -1,5 +1,4 @@
 WTD:
-- Background
 - Anchor freeze problem
 - Button responsive
 
