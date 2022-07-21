@@ -1,7 +1,4 @@
 WTD:
-- Bacjground
-- resolution adaptation
-- ClassNames optimization 
 - Anchor freeze problem
 - Button responsive
 
