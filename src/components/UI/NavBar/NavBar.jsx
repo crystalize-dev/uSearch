@@ -3,7 +3,7 @@ import cl from "./NavBar.module.css";
 import SquareButton from "../Buttons/SquareButton";
 import {logo} from "../../../img/imgs";
 
-const NavBar = () => {
+const NavBar = ({setVisible}) => {
     return (
         <div className={cl.navbar}>
             <img src={logo} id={"home"} alt="" className={cl.logo}/>
@@ -25,7 +25,7 @@ const NavBar = () => {
                     <hr className={cl.line}/>
                 </div>
             </div>
-            <SquareButton className={cl.btnArea} outlined={false}>Join Now</SquareButton>
+            <SquareButton className={cl.btnArea} outlined={false} onClick={() => setVisible(true)}>Join Now</SquareButton>
         </div>
     );
 };

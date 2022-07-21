@@ -4,10 +4,12 @@ import classes from "classnames";
 import SquareButton from "../../../components/UI/Buttons/SquareButton";
 import cl from "./Plans.module.css";
 import {checkWhite, oneStar, twoStars, threeStars} from "../../../img/imgs";
+import BluredRound from "../BluredRound/BluredRound";
 
-const Plans = ({id}) => {
+const Plans = ({id, setVisible}) => {
     return (
         <div className={cl.plans}>
+            <BluredRound size={500} top={30} left={34}/>
             <SplitText id={id} outlined1={"READY TO START"} outlined2={"WITH US"}>YOUR JOURNEY</SplitText>
             <div className={cl.plansArea}>
                 <div className={cl.plan}>
@@ -26,7 +28,7 @@ const Plans = ({id}) => {
                         <img src={checkWhite} alt="" className={cl.checked}/>
                         <p>Ability to join guilds</p>
                     </div>
-                    <SquareButton className={cl.btnJoin}>Join now</SquareButton>
+                    <SquareButton className={cl.btnJoin} onClick={() => setVisible(true)}>Join now</SquareButton>
                 </div>
                 <div className={classes(cl.plan, cl.center)}>
                     <img src={threeStars} alt="" className={cl.topImg}/>
@@ -44,7 +46,7 @@ const Plans = ({id}) => {
                         <img src={checkWhite} alt="" className={cl.checked}/>
                         <p>Priority search</p>
                     </div>
-                    <SquareButton className={cl.btnJoin}>Join now</SquareButton>
+                    <SquareButton className={cl.btnJoin} onClick={() => setVisible(true)}>Join now</SquareButton>
                 </div>
                 <div className={cl.plan}>
                     <img src={twoStars} alt="" className={cl.topImg}/>
@@ -62,7 +64,7 @@ const Plans = ({id}) => {
                         <img src={checkWhite} alt="" className={cl.checked}/>
                         <p>Unlocks messenger</p>
                     </div>
-                    <SquareButton className={cl.btnJoin}>Join now</SquareButton>
+                    <SquareButton className={cl.btnJoin} onClick={() => setVisible(true)}>Join now</SquareButton>
                 </div>
             </div>
         </div>

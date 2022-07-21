@@ -1,0 +1,35 @@
+.myBtn {
+    padding: 10px;
+    width: 100%;
+
+    background: transparent;
+    border: 1px solid var(--violet);
+    border-radius: 10px;
+
+    cursor: pointer;
+    color: var(--white);
+
+    font-size: 14px;
+    font-family: var(--second-font);
+
+    transition: var(--smooth);
+    font-weight: bold;
+}
+
+.myBtn:hover {
+    transform: scale(1.1);
+
+    background: var(--violet);
+
+    color: var(--white);
+}
+
+.myBtn:disabled {
+    color: black;
+
+    transform: scale(1);
+
+    background: rgba(128, 128, 128, 0.3);
+
+    cursor: no-drop;
+}

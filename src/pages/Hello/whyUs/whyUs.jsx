@@ -2,10 +2,12 @@ import React from 'react';
 import cl from "./whyUs.module.css";
 import {steamFull, hyperX, cola, check, dota, pubg, apex, overWatch} from "../../../img/imgs";
 import OutLined from "../../../components/UI/OutLinedText/OutLined";
+import BluredRound from "../BluredRound/BluredRound";
 
 const WhyUs = ({id}) => {
     return (
             <div className={cl.whyUs}>
+                <BluredRound size={500} top={10} left={100}/>
                 <div id={id} className={cl.anchor}/>
                 <div className={cl.imgBlock}>
                     <img src={pubg} alt="" className={cl.leftImgBlock}/>

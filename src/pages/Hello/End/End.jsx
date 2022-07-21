@@ -2,6 +2,7 @@ import React from 'react';
 import cl from "./End.module.css";
 import {steam, logo, vk, git} from "../../../img/imgs";
 import OutLined from "../../../components/UI/OutLinedText/OutLined";
+import BluredRound from "../BluredRound/BluredRound";
 
 const End = () => {
     return (
@@ -13,6 +14,7 @@ const End = () => {
                 </div>
             </div>
             <div className={cl.credits}>
+                <BluredRound size={1000} top={50} left={20}/>
                 <div className={cl.upperImgs}>
                     <a href="https://github.com/crystalize-dev">
                         <img src={git} alt=""/>

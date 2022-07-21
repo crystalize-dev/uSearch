@@ -3,10 +3,12 @@ import SquareButton from "../../../components/UI/Buttons/SquareButton";
 import cl from "./Home.module.css";
 import OutLined from "../../../components/UI/OutLinedText/OutLined";
 import {antiMage} from "../../../img/imgs";
+import BluredRound from "../BluredRound/BluredRound";
 
-const Home = ({id}) => {
+const Home = ({id, setVisible}) => {
     return (
         <div id={id} className={cl.home}>
+            <BluredRound size={500} top={4} left={-10}/>
             <div className={cl.textArea}>
                 <h1><OutLined>SEARCH</OutLined> YOUR IDEAL TEAMMATE</h1>
                 <p>We will help you find the perfect match for you. Just click a couple of buttons and go!</p>
@@ -25,7 +27,7 @@ const Home = ({id}) => {
                     </div>
                 </div>
                 <div className={cl.btns}>
-                    <SquareButton outlined={false} className={cl.backgrounded}>Get started</SquareButton>
+                    <SquareButton outlined={false} className={cl.backgrounded} onClick={() => setVisible(true)}>Get started</SquareButton>
                     <SquareButton outlined={true} className={cl.outlined}><a href="#whatMore">Learn More</a></SquareButton>
                 </div>
             </div>
