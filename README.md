@@ -1,6 +1,6 @@
 WTD:
-- Anchor freeze problem
-- Button responsive
+- Anchor freeze problem ???
+- advanced registration
 
 What More ?
 - Main Page design
